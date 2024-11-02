@@ -9,6 +9,8 @@ const authRoute = require('../backend/route/authRoute');
 const app = express();
 app.use(cors());
 app.use(express.json());
+const fs = require('fs');
+console.log(fs.readdirSync('../backend/route'));
 
 const MONGO_URL = 
 "mongodb+srv://ranjanirithu206:KS0pwc1jwcIxmZu0@cluster0.8mgcr.mongodb.net/MEAN?retryWrites=true&w=majority";
