@@ -27,5 +27,6 @@ mongoose.connect( MONGO_URL, {
 app.use('/api/auth', authRoute);
 app.use('/api/summarize', summarizeRoute);
 
-const PORT = 9000;
+//const PORT = 9000;
+const PORT = process.env.PORT || 9000;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
