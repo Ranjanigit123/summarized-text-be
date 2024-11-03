@@ -9,8 +9,8 @@ const path = require('path');
 console.log("Current directory:", __dirname);
 console.log("Files in current directory:", fs.readdirSync(__dirname));
 console.log("Files in ../backend/route:", fs.readdirSync(path.join(__dirname, '../backend/route')));
-const summarizeRoute = require('../backend/route/summarizeRoute');
-const authRoute = require('../backend/route/authRoute');
+const summarizeRoute = require('./route/summarizeRoute');
+const authRoute = require('./route/authRoute');
 
 const app = express();
 app.use(cors());
