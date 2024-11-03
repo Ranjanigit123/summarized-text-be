@@ -3,12 +3,6 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const fs = require('fs');
-const path = require('path');
-
-console.log("Current directory:", __dirname);
-console.log("Files in current directory:", fs.readdirSync(__dirname));
-console.log("Files in ../backend/route:", fs.readdirSync(path.join(__dirname, '../backend/route')));
 const summarizeRoute = require('./route/summarizeRoute');
 const authRoute = require('./route/authRoute');
 
